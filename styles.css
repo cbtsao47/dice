@@ -23,7 +23,7 @@ body {
 
 .dice__trigger,
 .dice__restart,
-.dice__ {
+.dice__changer {
   font-size: 1rem;
   padding: 1rem 1.2rem;
   border-radius: 4px;
