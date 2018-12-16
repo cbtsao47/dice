@@ -4,7 +4,6 @@ const imgWrapper = document.querySelector(".dice__result");
 const restart = document.querySelector(".dice__restart");
 
 const reset = function(event) {
-  console.log("hi");
   TweenMax.to(".dice__result", 0, {
     rotation: 0,
     y: 0
