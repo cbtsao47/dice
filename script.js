@@ -3,7 +3,7 @@ const img = document.querySelector(".dice__img");
 const imgWrapper = document.querySelector(".dice__result");
 const restart = document.querySelector(".dice__restart");
 const bodyTag = document.querySelector("body");
-const changeColor = document.querySelector(".dice__change-color");
+const changeColor = document.querySelector(".dice__changer");
 const reset = function(event) {
   TweenMax.to(".dice__result", 0, {
     rotation: 0,
