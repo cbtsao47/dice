@@ -2,7 +2,8 @@ const button = document.querySelector(".dice__trigger");
 const img = document.querySelector(".dice__img");
 const imgWrapper = document.querySelector(".dice__result");
 const restart = document.querySelector(".dice__restart");
-
+const bodyTag = document.querySelector("body");
+const changeColor = document.querySelector(".dice__change-color");
 const reset = function(event) {
   TweenMax.to(".dice__result", 0, {
     rotation: 0,
@@ -29,4 +30,14 @@ const changeDice = function(event) {
 };
 
 button.addEventListener("click", event => changeDice(event));
+
 restart.addEventListener("click", event => reset(event));
+
+changeColor.addEventListener("click", function(event) {
+  let red = Math.floor(Math.random() * 255);
+  let green = Math.floor(Math.random() * 255);
+  let blue = Math.floor(Math.random() * 255);
+  bodyTag.style.backgroundColor = `rgb(${red},${green},${blue})`;
+});
+
+//need a random color
