@@ -21,7 +21,8 @@ body {
   padding: 1.5rem;
 }
 
-.dice__trigger {
+.dice__trigger,
+.dice__restart {
   font-size: 1rem;
   padding: 1rem 1.2rem;
   border-radius: 4px;
